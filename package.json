@@ -7,11 +7,14 @@
   "spm": {
     "main": "./src/js/index.js",
     "build": {
-      "jsx": {},
-      "babel": {}
+      "babel": true,
+      "loader": {
+        ".jsx": "babel"
+      }
     },
     "dependencies": {
-      "react": "^0.13.3"
+      "react": "^0.13.3",
+      "classnames": "^2.1.2"
     }
   },
   "scripts": {
